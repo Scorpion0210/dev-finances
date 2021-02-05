@@ -53,7 +53,7 @@ const Transaction = {
     },
 
     total() {
-        card = document.querySelector(".total")
+        const card = document.querySelector(".total")
 
         if((Transaction.incomes() + Transaction.expenses() < 0)) {
             card.style.background = 'var(--vermelho)'
