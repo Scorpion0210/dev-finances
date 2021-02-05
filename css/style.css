@@ -23,6 +23,19 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* header =======================*/
+header {
+    background: #2d6191;
+    padding: 2rem 0 10rem;
+    text-align: center;
+}
+
+#logo {
+    color: #fff;
+    font-weight: 100;
+}
+
+/* Main =======================*/
 .sr-only {
     position: absolute;
     width: 1px;
@@ -98,18 +111,6 @@ button:hover {
 
 .button.cancel:hover {
     opacity: 1;
-}
-
-/* header =======================*/
-header {
-    background: #2d6191;
-    padding: 2rem 0 10rem;
-    text-align: center;
-}
-
-#logo {
-    color: #fff;
-    font-weight: 100;
 }
 
 /* balance =======================*/
@@ -298,13 +299,22 @@ td.expense {
 
 /* Footer =======================*/
 footer{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+
     padding: 4rem 0 2rem;
-    color: var(--dark-blue3);
+    color: var(--dark-blue);
 
     opacity: 0.6;
 }
+footer img {
+    padding: 0 0.5rem;
+}
 
+footer p a,
+footer p a:hover {
+    color: var(--dark-blue);
+}
 
 /* Responsive =======================*/
 @media (max-width:800px) {

@@ -4,18 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta 
-        name="author" 
-        content="Italo Thiago"
-    >
-    <meta
-      name="description"
-      content="Gerenciador financeiro para finanças pessoais"
-    >
-    <meta
-      name="keywords"
-      content="gerenciador financeiro pessoal, finanças, controle financeiro"
-    >
+    <meta name="author" content="Italo Thiago">
+    <meta name="description" content="Gerenciador financeiro para finanças pessoais">
+    <meta name="keywords" content="gerenciador financeiro pessoal, finanças, controle financeiro">
     <link rel="icon" href="./assets/logo-48x48.svg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -28,7 +19,6 @@
 <body>
     <header>
         <img src="./assets/logo.svg" alt="Logo Dev Finances">
-        <!--h1 id="logo">dev.finance$</h1-->
     </header>
 
     <main class="container">
@@ -67,10 +57,7 @@
         <section id="transaction">
             <h2 class="sr-only">Transações</h2>
 
-            <a 
-                href="#" 
-                onclick="Modal.openClose()" 
-                class="button new">+ Nova Transação</a>
+            <a href="#" onclick="Modal.openClose()" class="button new">+ Nova Transação</a>
 
             <table id="data-table">
                 <thead>
@@ -96,47 +83,24 @@
                 <h2>Nova Trasação</h2>
                 <form action="" onsubmit="Form.submit(event)">
                     <div class="input-group">
-                        <label 
-                            class="sr-only" 
-                            for="description">Descrição</label>
-                        <input 
-                            type="text" 
-                            id="description" 
-                            name="description"
-                            placeholder="Descrição"
-                        />
+                        <label class="sr-only" for="description">Descrição</label>
+                        <input type="text" id="description" name="description" placeholder="Descrição" />
                     </div>
 
                     <div class="input-group">
-                        <label 
-                            class="sr-only" 
-                            for="amount">Valor</label>
-                        <input 
-                            type="number"
-                            step="0.01"
-                            id="amount" 
-                            name="amount"
-                            placeholder="0,00"
-                        />
-                        <small class="help">Use o sinal - (negativo) para despesas e , (vírgula) para casa decimais</small>
+                        <label class="sr-only" for="amount">Valor</label>
+                        <input type="number" step="0.01" id="amount" name="amount" placeholder="0,00" />
+                        <small class="help">Use o sinal - (negativo) para despesas e , (vírgula) para casa
+                            decimais</small>
                     </div>
 
                     <div class="input-group">
-                        <label 
-                            class="sr-only" 
-                            for="date">Data</label>
-                        <input 
-                            type="date" 
-                            id="date" 
-                            name="date"
-                        />
+                        <label class="sr-only" for="date">Data</label>
+                        <input type="date" id="date" name="date" />
                     </div>
 
                     <div class="input-group actions">
-                        <a 
-                            href="#" 
-                            onclick="Modal.openClose()"
-                            class="button cancel">Cancelar</a>
+                        <a href="#" onclick="Modal.openClose()" class="button cancel">Cancelar</a>
                         <button>Salvar</button>
                     </div>
                 </form>
@@ -145,7 +109,15 @@
     </div>
 
     <footer>
-        <p>dev.finance$</p>
+        <p>
+            dev.finance$ by
+        </p>
+        <img src="./assets/git.svg" alt="Logo Git">
+        <p>
+            <a href="https://github.com/Scorpion0210" target="_blank">
+                scorpion0210
+            </a>
+        </p>
     </footer>
     <script src="./scripts/scripts.js"></script>
 </body>
