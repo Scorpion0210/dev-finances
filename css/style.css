@@ -327,15 +327,44 @@ footer p a:hover {
 
         font-weight: 400;
     }
+    /* header =======================*/
+    header {
+        padding: 2rem 0 4rem;
+    }
 
     /* Balance =======================*/
+    #balance {
+        margin-top: -2.5rem;
+    }
     .cont-balance{
         display: block;
     }
 
     /* Cards =======================*/
     .card {
+        padding: 0.5rem 0.8rem;
         width: 100%;
+        margin-bottom: 0.5rem;
+        height: 5rem;
+    }
+
+    .card h3 {
+        font-size: .75rem;
+    }
+
+    .card p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+
+        margin-top: 0;
+    }
+
+    .card.space {
+        margin: 0 0.5rem 1rem 0;
+    }
+    
+    .card.total{
+        margin-bottom: 2rem;
     }
 
     /* table =======================*/
@@ -344,5 +373,18 @@ footer p a:hover {
         width: 100%;
 
         overflow-x: auto;
+    }
+    
+    table tbody tr {
+        font-size: 0.8rem;
+    }
+
+    table thead th {
+        padding: 0.5rem 2.5rem;
+    }
+
+    table tbody td {
+        text-align: center;
+        padding: 0.2rem 1rem;
     }
 }
